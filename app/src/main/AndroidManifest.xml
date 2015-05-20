@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ssui.miti.org.thedroneapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="mantis"
+        android:theme="@style/AppTheme" >
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="mantis"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="mantis" >
+        </activity>
+        <activity
+            android:name=".ColorPickerActivity"
+            android:screenOrientation="portrait"
+            android:label="Color Pickerr" >
+        </activity>
+        <activity
+            android:name=".VideoViewActivity"
+            android:screenOrientation="portrait"
+            android:label="Video View Activity" >
+        </activity>
+    </application>
+
+</manifest>

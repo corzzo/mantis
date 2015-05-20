@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Designed and Developed by\nJuan Corzo.\n\nSoftware Structures for User Interfaces 2015."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/mainTextView"
+        android:paddingTop="50dp"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/theImage"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/miti"
+        android:layout_below="@+id/mainTextView" />
+
+</RelativeLayout><!-- From: file:/Users/corzo/Desktop/TheDroneApp/app/src/main/res/layout/menu3_layout.xml -->
